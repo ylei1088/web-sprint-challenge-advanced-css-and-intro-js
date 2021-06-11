@@ -206,7 +206,9 @@ button:hover {
 }
 
 /* Responsive media query*/
-@media (max-width: 500px) {
+
+/* Small devices (portrait tablets and large phones, 500px and up) */
+@media only screen and (max-width: 500px) {
   nav {
     width: 40%;
   }
@@ -238,5 +240,48 @@ button:hover {
   }
   .artist img {
     height: 80%;
+  }
+}
+
+/* Medium devices (landscape tablets, 767px and up) */
+@media only screen and (max-width: 767px) {
+  nav {
+    width: 40%;
+  }
+
+  nav a {
+    font-size: 1.5rem;
+  }
+
+  .title-container h1 {
+    font-size: 4rem;
+  }
+
+  .title-container div {
+    background-size: cover;
+    height: auto;
+    padding: 10%;
+    margin: 5%;
+  }
+
+  .artists-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .artist {
+    width: 70%;
+  }
+  .artist img {
+    height: 90%;
+  }
+}
+
+/* Large devices (960px and up) */
+@media only screen and (max-width: 960px) {
+  nav {
+    width: 40%;
   }
 }
